@@ -1,0 +1,42 @@
+// include custom theme
+@import "custom";
+
+.App {
+  background: url("https://images.unsplash.com/photo-1535350356005-fd52b3b524fb?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80");
+  overflow: hidden;
+  border-radius: 0 !important;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  max-width: 100% !important;
+  min-height: 100vh;
+}
+
+.container {
+  //background: url("https://www.designbolts.com/wp-content/uploads/2012/12/Skin-Side-Up-White-Seamless-Texutre-For-Website-Background.jpg");
+  background: white;
+  overflow: hidden;
+  border-radius: 0 !important;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  border-left: 0.5rem solid black;
+  border-right: 0.5rem solid black;
+  min-height: 100vh;
+}
+
+.jumbotron {
+  background-color: white !important;
+  border-radius: 1rem !important;
+  box-shadow: 5px 10px 18px #888888;
+}
+
+.vertical-center {
+  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh; /* These two lines are counted as one :-)       */
+
+  display: flex;
+  align-items: center;
+}

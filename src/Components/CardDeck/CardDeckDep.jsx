@@ -6,7 +6,9 @@ import {
   ListGroupItem,
   Card,
   CardDeck,
+  Button,
 } from "react-bootstrap";
+import "../../assets/styles/CardDeckDep.scss"
 
 const CardDeckDep = () => {
   return (
@@ -18,10 +20,10 @@ const CardDeckDep = () => {
         </Col>
       </Row>
 
-      <CardDeck>
+      <CardDeck className="pb-5">
         {/* React */}
         <Card>
-          <Card.Img variant="top" src="https://via.placeholder.com/250" />
+          <Card.Img className="p-5" variant="top" src="/assets/images/react-logo.png" />
           <Card.Body>
             <Card.Title>
               <b style={{ color: "#61dafb" }}>React.js</b>
@@ -39,13 +41,13 @@ const CardDeckDep = () => {
             </ListGroupItem>
           </ListGroup>
           <Card.Body>
-            <Card.Link href="https://reactjs.org/">React.js</Card.Link>
+            <Button variant="outline-info" href="https://reactjs.org/">React.js</Button>
           </Card.Body>
         </Card>
 
         {/* Auth0 */}
         <Card>
-          <Card.Img variant="top" src="https://via.placeholder.com/250" />
+          <Card.Img className="p-5" variant="top" src="/assets/images/auth0-logo.png" />
           <Card.Body>
             <Card.Title>
               <b style={{ color: "#eb5424" }}>Auth0</b>
@@ -61,13 +63,13 @@ const CardDeckDep = () => {
             </ListGroupItem>
           </ListGroup>
           <Card.Body>
-            <Card.Link href="https://auth0.com/">Auth0</Card.Link>
+            <Button variant="outline-info" href="https://auth0.com/">Auth0</Button>
           </Card.Body>
         </Card>
 
         {/* Bootstrap */}
         <Card>
-          <Card.Img variant="top" src="https://via.placeholder.com/250" />
+          <Card.Img className="p-5" variant="top" src="/assets/images/bootstrap-logo.png" />
           <Card.Body>
             <Card.Title>
               <b style={{ color: "#7952b3" }}>Bootstrap</b>
@@ -86,7 +88,7 @@ const CardDeckDep = () => {
             </ListGroupItem>
           </ListGroup>
           <Card.Body>
-            <Card.Link href="https://getbootstrap.com/">Bootstrap</Card.Link>
+            <Button variant="outline-info" href="https://getbootstrap.com/">Bootstrap</Button>
           </Card.Body>
         </Card>
       </CardDeck>

@@ -1,0 +1,37 @@
+.card {
+    border-radius: 1rem !important;
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 5px 10px 18px #888888;
+
+    .card-img-top {
+        max-height: 200px;
+        max-width: 200px;
+        margin: auto;
+    }
+
+    .cdm-prompt {
+        background-color: black !important;
+        color: white !important;
+        border-radius: 1rem !important;
+    }
+
+    .blinking-text {
+        animation: blinking 0.9s infinite;
+        font-size: 20px;
+    }
+
+    @keyframes blinking {
+        0% {
+            color: white;
+        }
+
+        50% {
+            color: transparent;
+        }
+
+        100% {
+            color: #000;
+        }
+    }
+}
