@@ -4,11 +4,12 @@ import React from "react";
 import { withRouter } from "react-router";
 import { Route } from "react-router-dom";
 import Callback from "./Callback/Callback";
-import "./assets/styles/App.css";
-import { Jumbotron, Button, Container } from "react-bootstrap";
+import { Jumbotron, Button, Container, Row, Col, Image } from "react-bootstrap";
 import CardDeckDep from "./Components/CardDeck/CardDeckDep.jsx";
 import CodeSnippets from "./Components/CodeSnippets/CodeSnippets.jsx";
-import CreatorProfile from "./Components/CreatorProfile/CreatorProfile.jsx"
+import CreatorProfile from "./Components/CreatorProfile/CreatorProfile.jsx";
+import License from "./Components/License/License.jsx";
+import "./assets/styles/App.css";
 
 // https://medium.com/@meakaakka/a-beginners-guide-to-writing-a-kickass-readme-7ac01da88ab3
 // TODO: Code style (https://github.com/standard/standard)
@@ -39,62 +40,91 @@ function HomePage(props) {
             </Button>
           </p>
         </Jumbotron>
-        <h2>The Motivation Behind This Application</h2>
+        <h2 className="mb-3">The Motivation Behind This Application</h2>
         <p>
-          A short description of the motivation behind the creation and
-          maintenance of the project. This should explain why the project
-          exists.
+          This project exisits to show my passion for coding. It has been built
+          with all my favorite libraries, languages and dependencies. I was
+          motivated to put together a clean application that showcased the
+          abilities of some of the most lucrative programming that's on the web
+          today. I plan on periodically updating this page with fun new
+          components and features to grow and develop my skillset in the
+          information technology industry. As a web developer my abilities will
+          only mature with my ability to learn and practice my skills when
+          sharing them with the world.
+        </p>
+        <p>
+          <b>Languages:</b> I chose to use React.js as the foundation of the
+          user interface, Auth0 for the Authentication and authorization
+          platform as well as Bootstrap's CSS Framework for developing a
+          responsive and mobile-first website.
         </p>
         <hr />
         <CardDeckDep />
         <hr />
-        <h2>Code Style, What is it!?</h2>
+        <h2 className="mb-4">Code Style, What is it!?</h2>
         <p>
           The beauty of JavaScript Standard Style is that it's simple. No one
           wants to maintain multiple hundred-line style configuration files for
           every module/project you work on.
         </p>
-        <h3>Why I Use JavaScript Standard Style</h3>
-        <span className="text-left">
-          <ul>
-            <li>
-              No configuration. The easiest way to enforce consistent style in
-              your project. Just drop it in.
-            </li>
-            <li>
-              Automatically format code. Just run standard --fix and say goodbye
-              to messy or inconsistent code.
-            </li>
-            <li>
-              Catch style issues & programmer errors early. Save precious code
-              review time by eliminating back-and-forth between reviewer &
-              contributor.
-            </li>
-          </ul>
-        </span>
+
+        <Row>
+          <Col md={2} className="m-auto" style={{ textTransform: "uppercase" }}>
+            <h4>Why I Use JavaScript Standard Style</h4>
+          </Col>
+          <Col md={8} className="text-left m-auto">
+            <ul>
+              <li>
+                No configuration. Enforce consistent style in a project. It's
+                easy, just drop it in.
+              </li>
+              <li>
+                Automatically format code. Say goodbye to messy or inconsistent
+                code.
+              </li>
+              <li>
+                Catch style issues & programmer errors early. Saving review time
+                by eliminating back-and-forth between reviewer & contributor.
+              </li>
+            </ul>
+          </Col>
+          <Col md={2} className="m-auto">
+            <Image
+              src="/assets/images/standard-javascript.png"
+              fluid
+              className="p-2"
+            />
+          </Col>
+        </Row>
         <Button
           variant="outline-info"
           href="https://github.com/standard/standard"
+          className="mt-2"
         >
           JavaScript Standard Style
         </Button>
         <hr />
-        <h2>Check Out These Features</h2>
+        <h2 className="mb-4">Check Out These Features</h2>
         <CodeSnippets />
         <hr />
-        <h2>Who Made This Awesome Application?</h2>
-        <CreatorProfile/>
+        <h2 className="mb-4">Who Made This Awesome Application?</h2>
+        <CreatorProfile />
         <hr />
-        <h2>Licensed To Code</h2>
-        <p>A short snippet describing the license (MIT, Apache etc)</p>
+        <License />
       </Container>
     );
   }
   // if not authentication login
   return (
     <Container className="vertical-center justify-content-center">
-      <Jumbotron>
-        <h1>Do I know you? Please, log in.</h1>
+      <Jumbotron
+        style={{
+          border: "solid #888888 .1rem",
+        }}
+        fluid
+      >
+        <h1 className="mb-2">Do I know you?</h1>
+        <h2>Please, log in.</h2>
         <Button
           className="mt-3"
           variant="outline-primary"

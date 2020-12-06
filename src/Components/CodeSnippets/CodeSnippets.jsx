@@ -1,18 +1,36 @@
 import React from "react";
-import { Row, Col, Button, Accordion, Card } from "react-bootstrap";
+import { Row, Col, Accordion, Card } from "react-bootstrap";
 import "../../assets/styles/CodeSnippets.scss";
 
 const CodeSnippets = () => {
   return (
     <>
-      <h2>Let's Look At Some Code Snippets</h2>
-      <p>
-        As a company you want to enable your developers to use open source
-        software, and as a developer you want the flexibility of using both
-        whole components and re-using files or partial code snippets originating
-        from open source projects. Below I'm going to go over a few snippets of
-        code showing the work behind the curtain.
-      </p>
+      <Row className="mb-4">
+        <Col md={3}>
+          <h5 className="d-inline">Let's</h5>
+          <h2 className="d-inline">
+            <sub>Look</sub>
+          </h2>
+          <h4 className="d-inline" style={{ color: "teal" }}>
+            @
+          </h4>
+          <br />
+          <h3 className="d-inline">
+            <sup>Some</sup>
+          </h3>
+          <h6 className="d-inline">
+            <code style={{ color: "teal" }}>Code</code>
+          </h6>
+          <h4 className="d-inline">Snippets</h4>
+        </Col>
+        <Col md={9}>
+          As a company you want to enable your developers to use open source
+          software, and as a developer you want the flexibility of using both
+          whole components and re-using files or partial code snippets
+          originating from open source projects. Below I'm going to go over a
+          few snippets of code showing the work behind the curtain.
+        </Col>
+      </Row>
       <Accordion defaultActiveKey="0">
         <Card>
           <Accordion.Toggle as={Card.Header} eventKey="0">
@@ -140,11 +158,13 @@ const CodeSnippets = () => {
               </Row>
               <Row className="text-left mb-2">
                 <Col md={6}>
-                  <p>
-                    When using the Auth0 login page, users are taken away from
-                    the application. However, after they authenticate, users
-                    automatically return to the <b>callback</b> URL.
-                  </p>
+                  <ul>
+                    <li>
+                      When using the Auth0 login page, users are taken away from
+                      the application. However, after they authenticate, users
+                      automatically return to the <b>callback</b> URL.
+                    </li>
+                  </ul>
                 </Col>
                 <Col md={6} style={{ borderLeft: ".2rem solid black" }}>
                   <div className="code-box">
@@ -160,11 +180,13 @@ const CodeSnippets = () => {
               </Row>
               <Row className="text-left mb-2">
                 <Col md={6}>
-                  <p>
-                    Adding the <b>Auth</b> service to all the needed components
-                    give the ability to wrap the router with a global{" "}
-                    <b>Auth</b> instance to protect the routes.
-                  </p>
+                  <ul>
+                    <li>
+                      Adding the <b>Auth</b> service to all the needed
+                      components give the ability to wrap the router with a
+                      global <b>Auth</b> instance to protect the routes.
+                    </li>
+                  </ul>
                 </Col>
                 <Col md={6} style={{ borderLeft: ".2rem solid black" }}>
                   <div className="code-box">
@@ -174,7 +196,7 @@ const CodeSnippets = () => {
                       ReactDOM.render(
                       <br />
                       &#8195; &#60;BrowserRouter&#62; <br />
-                      &#8195; &#8195; &#60;App auth= &#123; auth &#125;/&#62;{" "}
+                      &#8195; &#8195; &#60;App auth= &#123; auth &#125;/&#62;
                       <br />
                       &#8195; &#60;/BrowserRouter&#62;,
                       <br />
@@ -191,11 +213,156 @@ const CodeSnippets = () => {
         <Card>
           <Accordion.Toggle as={Card.Header} eventKey="1">
             <h4>
-              <b>Bootstrap:</b> Responsive & Mobile-first Web Development
+              <b>Bootstrap:</b> Responsive & Mobile-First Web Development
             </h4>
           </Accordion.Toggle>
           <Accordion.Collapse eventKey="1">
-            <Card.Body></Card.Body>
+            <Card.Body>
+              <Row className="text-left mb-2">
+                <Col md={6} className="m-auto">
+                  <ul>
+                    <li>
+                      <b>Jumbotron:</b> A lightweight, flexible component that
+                      can optionally extend the entire viewport to showcase key
+                      content.
+                    </li>
+                  </ul>
+                </Col>
+                <Col md={6} style={{ borderLeft: ".2rem solid black" }}>
+                  <div className="code-box">
+                    <code>
+                      &lt;<var>Jumbotron</var> &gt;
+                      <br />
+                      &#8195; &lt;h1&gt;Do I know you?&lt;/h1&gt;
+                      <br />
+                      &#8195; &lt;h2&gt;Please, log in.&lt;/h2&gt;
+                      <br />
+                      &#8195; &lt;Button&gt;Log in&lt;/Button&gt;
+                      <br />
+                      &lt;/<var>Jumbotron</var>&gt;
+                    </code>
+                  </div>
+                </Col>
+              </Row>
+              <Row className="text-left mb-2">
+                <Col md={6} className="m-auto">
+                  <ul>
+                    <li>
+                      <b>Accordion:</b> Accordions provide a way to restrict
+                      Card components to only open one at a time.
+                    </li>
+                  </ul>
+                </Col>
+                <Col md={6} style={{ borderLeft: ".2rem solid black" }}>
+                  <div className="code-box">
+                    <code>Code </code>
+                  </div>
+                </Col>
+              </Row>
+              <Row className="text-left mb-2">
+                <Col md={6} className="m-auto">
+                  <ul>
+                    <li>
+                      <b>Rows & Cols:</b> Bootstrap’s grid system uses a series
+                      of containers, rows, and columns to layout and align
+                      content. It’s built with flexbox and is fully responsive.
+                    </li>
+                  </ul>
+                </Col>
+                <Col md={6} style={{ borderLeft: ".2rem solid black" }}>
+                  <div className="code-box">
+                    <code>
+                      &lt;<var>Row</var>&gt;
+                      <br />
+                      &#8195; &lt;<var>Col</var> md={2} className="m-auto"
+                      style=&lcub;&lcub; textTransform: "uppercase"
+                      $rcub;$rcub;&gt;
+                      <br />
+                      &#8195; &#8195; &lt;h4&gt;Why I Use JavaScript Standard
+                      Style&lt;/h4&gt;
+                      <br />
+                      &#8195; &lt;/<var>Col</var>&gt;
+                      <br />
+                      &#8195; &lt;<var>Col</var> md=&lcub;8$rcub;
+                      className="text-left m-auto"&gt;
+                      <br />
+                      &#8195; &#8195; &lt;ul&gt;
+                      <br />
+                      &#8195; &#8195; &#8195; &lt;li&gt;
+                      <br />
+                      &#8195; &#8195; &#8195; &#8195; No configuration. Enforce
+                      consistent style in a project. It's easy, just drop it in.
+                      <br />
+                      &#8195; &#8195; &#8195; &lt;/li&gt;
+                      <br />
+                      &#8195; &#8195; &#8195; &lt;li&gt;
+                      <br />
+                      &#8195; &#8195; &#8195; &#8195; Automatically format code.
+                      Say goodbye to messy or inconsistent code.
+                      <br />
+                      &#8195; &#8195; &#8195; &lt;/li&gt;
+                      <br />
+                      &#8195; &#8195; &#8195; &lt;li&gt;
+                      <br />
+                      &#8195; &#8195; &#8195; &#8195; Catch style issues &
+                      programmer errors early. Saving review time by eliminating
+                      back-and-forth between reviewer & contributor.
+                      <br />
+                      &#8195; &#8195; &#8195; &lt;/li&gt;
+                      <br />
+                      &#8195; &#8195; &lt;/ul&gt;
+                      <br />
+                      &#8195; &lt;/<var>Col</var>&gt;
+                      <br />
+                      &#8195; &lt;<var>Col</var> md=&lcub;2$rcub;
+                      className="m-auto"&gt;
+                      <br />
+                      &#8195; &#8195; &lt;Image
+                      src="/assets/images/standard-javascript.png" fluid
+                      className="p-2" /&gt;
+                      <br />
+                      &#8195; &lt;/<var>Col</var>&gt;
+                      <br />
+                      &lt;/<var>Row</var>&gt;
+                      <br />
+                    </code>
+                  </div>
+                </Col>
+              </Row>
+              <Row className="text-left mb-2">
+                <Col md={6} className="m-auto">
+                  <ul>
+                    <li>
+                      <b>Buttons:</b> Custom button styles for actions in forms,
+                      dialogs, and more with support for multiple sizes, states,
+                      and more.
+                    </li>
+                  </ul>
+                </Col>
+                <Col md={6} style={{ borderLeft: ".2rem solid black" }}>
+                  <div className="code-box">
+                    <code>
+                      &lt;<var>Button</var> <br />
+                      &#8195;className="mt-3" <br />
+                      &#8195;variant="outline-primary" <br />
+                      &#8195;onClick=&#123;props.auth.login&#125;
+                      <br />
+                      &gt;
+                      <br />
+                      &#8195;Log in
+                      <br />
+                      &lt;/<var>Button</var>&gt;
+                      <br />
+                    </code>
+                  </div>
+                </Col>
+              </Row>
+              <Row className="text-center mb-2">
+                <Col md={12} className="m-auto pt-3">
+                  <i>© https://react-bootstrap.github.io/</i>
+                </Col>
+              </Row>
+            </Card.Body>
           </Accordion.Collapse>
         </Card>
         <Card>
@@ -205,7 +372,92 @@ const CodeSnippets = () => {
             </h4>
           </Accordion.Toggle>
           <Accordion.Collapse eventKey="2">
-            <Card.Body></Card.Body>
+            <Card.Body>
+            <Row className="text-left mb-2">
+                <Col md={6} className="m-auto">
+                  <ul>
+                    <li>
+                      <b>create-react-app (CRA):</b> text
+                    </li>
+                  </ul>
+                </Col>
+                <Col md={6} style={{ borderLeft: ".2rem solid black" }}>
+                  <div className="code-box">
+                    <code>Code </code>
+                  </div>
+                </Col>
+              </Row>
+              <Row className="text-left mb-2">
+                <Col md={6} className="m-auto">
+                  <ul>
+                    <li>
+                      <b>react-router:</b> text
+                    </li>
+                  </ul>
+                </Col>
+                <Col md={6} style={{ borderLeft: ".2rem solid black" }}>
+                  <div className="code-box">
+                    <code>Code </code>
+                  </div>
+                </Col>
+              </Row>
+              <Row className="text-left mb-2">
+                <Col md={6} className="m-auto">
+                  <ul>
+                    <li>
+                      <b>react-dom:</b> text
+                    </li>
+                  </ul>
+                </Col>
+                <Col md={6} style={{ borderLeft: ".2rem solid black" }}>
+                  <div className="code-box">
+                    <code>Code </code>
+                  </div>
+                </Col>
+              </Row>
+              <Row className="text-left mb-2">
+                <Col md={6} className="m-auto">
+                  <ul>
+                    <li>
+                      <b>react-router-dom:</b> text
+                    </li>
+                  </ul>
+                </Col>
+                <Col md={6} style={{ borderLeft: ".2rem solid black" }}>
+                  <div className="code-box">
+                    <code>Code </code>
+                  </div>
+                </Col>
+              </Row>
+              <Row className="text-left mb-2">
+                <Col md={6} className="m-auto">
+                  <ul>
+                    <li>
+                      <b>react-icons:</b> text
+                    </li>
+                  </ul>
+                </Col>
+                <Col md={6} style={{ borderLeft: ".2rem solid black" }}>
+                  <div className="code-box">
+                    <code>Code </code>
+                  </div>
+                </Col>
+              </Row>
+              <Row className="text-left mb-2">
+                <Col md={6} className="m-auto">
+                  <ul>
+                    <li>
+                      <b>react-scripts:</b> text
+                    </li>
+                  </ul>
+                </Col>
+                <Col md={6} style={{ borderLeft: ".2rem solid black" }}>
+                  <div className="code-box">
+                    <code>Code </code>
+                  </div>
+                </Col>
+              </Row>
+            </Card.Body>
           </Accordion.Collapse>
         </Card>
       </Accordion>

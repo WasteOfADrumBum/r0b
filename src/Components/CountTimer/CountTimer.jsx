@@ -2,12 +2,14 @@ import React, { useEffect, useState } from "react";
 
 function CountTimer() {
   const calculateTimeLeft = () => {
-    let year = new Date().getFullYear();
-    const difference = +new Date(`${year}-10-1`) - +new Date();
+    const difference = +new Date() - +new Date(`2020-6-7`);
     let timeLeft = {};
     if (difference > 0) {
       timeLeft = {
-        days: Math.floor(difference / (1000 * 60 * 60 * 24)),
+        years: Math.floor(difference / 31557600000),
+        months: Math.floor((difference / 2629800000)),
+        weeks: Math.floor((difference / 604800016.56) % 4 ),
+        days: Math.floor((difference / 86400000) % 7),
         hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
         minutes: Math.floor((difference / 1000 / 60) % 60),
         seconds: Math.floor((difference / 1000) % 60),
@@ -31,8 +33,8 @@ function CountTimer() {
       return;
     }
     timerComponents.push(
-      <span>
-        {timeLeft[interval]} {interval}
+      <span className="d-inline">
+        {timeLeft[interval] }&thinsp;{interval}&thinsp;	
       </span>
     );
   });
