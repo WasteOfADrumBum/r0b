@@ -24,12 +24,22 @@ function HomePage(props) {
   };
 
   if (authenticated) {
-    const { name } = props.auth.getProfile();
+    const { name, picture } = props.auth.getProfile();
     // if authenticated return the name of the user logged in
     return (
       <Container className="pl-5 pr-5">
         <Jumbotron className="mt-3">
-          <h1>Glad to see you back, {name}.</h1>
+        <Image
+              src={picture}
+              fluid
+              roundedCircle
+              style={{
+                borderRadius: ".4rem",
+                boxShadow: ".2rem .4rem .8rem #888888",
+              }}
+              className="p-1 mb-3"
+            />
+          <h1>Glad to see you back, {name}. </h1>
           <p>
             This is a simple application designed to create a template for
             testing.
@@ -122,8 +132,8 @@ function HomePage(props) {
           border: "solid #888888 .1rem",
         }}
       >
-        <h1 className="mb-2">Do I know you?</h1>
-        <h2>Please, log in.</h2>
+        <h1 className="mb-3">Do I know you?</h1>
+        <h2 style={{ fontFamily: "Lucida Handwriting, cursive" }}>Please, log in.</h2>
         <Button
           className="mt-3"
           variant="outline-primary"

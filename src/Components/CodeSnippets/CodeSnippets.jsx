@@ -23,7 +23,7 @@ const CodeSnippets = () => {
           </h6>
           <h4 className="d-inline">Snippets</h4>
         </Col>
-        <Col md={9}>
+        <Col md={9} className="text-left">
           As a company you want to enable your developers to use open source
           software, and as a developer you want the flexibility of using both
           whole components and re-using files or partial code snippets
@@ -275,15 +275,15 @@ const CodeSnippets = () => {
                       &lt;<var>Row</var>&gt;
                       <br />
                       &#8195; &lt;<var>Col</var> md={2} className="m-auto"
-                      style=&lcub;&lcub; textTransform: "uppercase"
-                      $rcub;$rcub;&gt;
+                      style=&#123;&#123; textTransform: "uppercase"
+                      &#125;&#125;&gt;
                       <br />
                       &#8195; &#8195; &lt;h4&gt;Why I Use JavaScript Standard
                       Style&lt;/h4&gt;
                       <br />
                       &#8195; &lt;/<var>Col</var>&gt;
                       <br />
-                      &#8195; &lt;<var>Col</var> md=&lcub;8$rcub;
+                      &#8195; &lt;<var>Col</var> md=&#123;8&#125;
                       className="text-left m-auto"&gt;
                       <br />
                       &#8195; &#8195; &lt;ul&gt;
@@ -314,7 +314,7 @@ const CodeSnippets = () => {
                       <br />
                       &#8195; &lt;/<var>Col</var>&gt;
                       <br />
-                      &#8195; &lt;<var>Col</var> md=&lcub;2$rcub;
+                      &#8195; &lt;<var>Col</var> md=&#123;2&#125;
                       className="m-auto"&gt;
                       <br />
                       &#8195; &#8195; &lt;Image
