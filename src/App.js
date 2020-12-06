@@ -121,7 +121,6 @@ function HomePage(props) {
         style={{
           border: "solid #888888 .1rem",
         }}
-        fluid
       >
         <h1 className="mb-2">Do I know you?</h1>
         <h2>Please, log in.</h2>
