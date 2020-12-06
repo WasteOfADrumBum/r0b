@@ -29,7 +29,7 @@ const CardDeckDep = () => {
               <b style={{ color: "#61dafb" }}>React.js</b>
             </Card.Title>
             <Card.Text>
-              A JavaScript library for building user interfaces
+              A component-based JavaScript library for building user interfaces
             </Card.Text>
           </Card.Body>
           <ListGroup className="list-group-flush">

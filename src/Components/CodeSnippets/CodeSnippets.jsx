@@ -255,7 +255,49 @@ const CodeSnippets = () => {
                 </Col>
                 <Col md={6} style={{ borderLeft: ".2rem solid black" }}>
                   <div className="code-box">
-                    <code>Code </code>
+                    <code>
+                      &#60;<var>Accordion</var> defaultActiveKey="0"&#62;
+                      <br />
+                      &#8195; &#60;Card&#62; <br />
+                      &#8195; &#8195; &#60;<var>Accordion</var>.Toggle
+                      as=&#123;Card.Header&#125; eventKey="0"&#62; <br />
+                      &#8195; &#8195; &#8195; &#60;h4&#62; <br />
+                      &#8195; &#8195; &#8195; &#8195;
+                      &#60;b&#62;Auth0:&#60;/b&#62; Authentication &
+                      Authorization
+                      <br />
+                      &#8195; &#8195; &#8195; &#60;/h4&#62; <br />
+                      &#8195; &#8195; &#60;/<var>
+                        Accordion
+                      </var>.Toggle&#62; <br />
+                      &#8195; &#8195; &#60;<var>Accordion</var>.Collapse
+                      eventKey="0"&#62;
+                      <br />
+                      &#8195; &#8195; &#8195; &#60;Card.Body&#62; <br />
+                      &#8195; &#8195; &#8195; &#8195; &#60;Row
+                      className="text-left mb-2"&#62; <br />
+                      &#8195; &#8195; &#8195; &#8195; &#8195; &#60;Col
+                      md=&#123;6&#125; &#62; <br />
+                      &#8195; &#8195; &#8195; &#8195; &#8195; &#8195;
+                      &#60;ul&#62; <br />
+                      &#8195; &#8195; &#8195; &#8195; &#8195; &#8195; &#8195;
+                      &#60;li&#62; <br />
+                      &#8195; &#8195; &#8195; &#8195; &#8195; &#8195; &#8195;
+                      &#8195; &#60;b&#62; auth0.js: &#60;/b&#62; This is the
+                      default library to integrate web applications with Auth0.
+                      <br />
+                      &#8195; &#8195; &#8195; &#8195; &#8195; &#8195; &#8195;
+                      &#60;/li&#62; <br />
+                      &#8195; &#8195; &#8195; &#8195; &#8195; &#8195;
+                      &#60;/ul&#62; <br />
+                      &#8195; &#8195; &#8195; &#8195; &#60;/Row&#62; <br />
+                      &#8195; &#8195; &#8195; &#60;/Card.Body&#62; <br />
+                      &#8195; &#8195; &#60;/<var>
+                        Accordion
+                      </var>.Collapse&#62; <br />
+                      &#8195; &#60;/Card&#62; <br />
+                      &#60;/<var>Accordion</var>&#62; <br />
+                    </code>
                   </div>
                 </Col>
               </Row>
@@ -373,7 +415,7 @@ const CodeSnippets = () => {
           </Accordion.Toggle>
           <Accordion.Collapse eventKey="2">
             <Card.Body>
-            <Row className="text-left mb-2">
+              <Row className="text-left mb-2">
                 <Col md={6} className="m-auto">
                   <ul>
                     <li>
