@@ -1,0 +1,14 @@
+.code-box {
+    background: black;
+    border-radius: .5rem;
+    box-shadow: .2rem .4rem .8rem #888888;
+    padding: .5rem;
+
+    code {
+        color: white !important;
+    }
+
+    var {
+        color: lightblue;
+    }
+}
