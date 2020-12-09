@@ -44,7 +44,7 @@ TypeScript, as described on its official website, is a superset of JavaScript th
 
 ## Example Gif
 
-<img src="public/assets/images/r0b-demo.png" width="500" />
+<img src="public/assets/images/rob-demo.png" width="500" />
 
 ## Repository
 
