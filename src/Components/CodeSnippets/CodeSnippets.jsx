@@ -67,36 +67,34 @@ const CodeSnippets = () => {
               </Row>
               <Row className="text-left mb-2">
                 <Col md={6}>
-                  <p>
-                    <ul>
-                      <li>
-                        <b>getProfile:</b> This function returns the profile of
-                        the logged-in user.
-                      </li>
-                      <li>
-                        <b>handleAuthentication:</b> This function looks for the
-                        result of the authentication process in the URL hash.
-                        Then, the function processes the result with the
-                        parseHash method from auth0-js.
-                      </li>
-                      <li>
-                        <b>isAuthenticated:</b> This function checks whether the
-                        expiry time for the user's ID token has passed.
-                      </li>
-                      <li>
-                        <b>login:</b> This function initiates the login process,
-                        redirecting users to the login page.
-                      </li>
-                      <li>
-                        <b>logout:</b> This function removes the user's tokens
-                        and expiry time.
-                      </li>
-                      <li>
-                        <b>setSession:</b> This function sets the user's ID
-                        token, profile, and expiry time.
-                      </li>
-                    </ul>
-                  </p>
+                  <ul>
+                    <li>
+                      <b>getProfile:</b> This function returns the profile of
+                      the logged-in user.
+                    </li>
+                    <li>
+                      <b>handleAuthentication:</b> This function looks for the
+                      result of the authentication process in the URL hash.
+                      Then, the function processes the result with the parseHash
+                      method from auth0-js.
+                    </li>
+                    <li>
+                      <b>isAuthenticated:</b> This function checks whether the
+                      expiry time for the user's ID token has passed.
+                    </li>
+                    <li>
+                      <b>login:</b> This function initiates the login process,
+                      redirecting users to the login page.
+                    </li>
+                    <li>
+                      <b>logout:</b> This function removes the user's tokens and
+                      expiry time.
+                    </li>
+                    <li>
+                      <b>setSession:</b> This function sets the user's ID token,
+                      profile, and expiry time.
+                    </li>
+                  </ul>
                 </Col>
                 <Col md={6} style={{ borderLeft: ".2rem solid black" }}>
                   <div className="code-box">

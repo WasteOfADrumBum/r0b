@@ -23,7 +23,7 @@ const CardDeckDep = () => {
       <CardDeck className="pb-5">
         {/* React */}
         <Card>
-          <Card.Img className="p-5" variant="top" src="/assets/images/react-logo.png" />
+          <Card.Img className="p-5" variant="top" src="/assets/images/react-logo.png" />          
           <Card.Body>
             <Card.Title>
               <b style={{ color: "#61dafb" }}>React.js</b>

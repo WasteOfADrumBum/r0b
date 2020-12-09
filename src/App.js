@@ -49,10 +49,8 @@ function HomePage(props) {
             This is a simple application designed to create a template for
             testing.
           </p>
-          <p>
-            <NavBar />
-          </p>
-          <p>
+          <NavBar />
+          <p className="mt-3">
             <Button variant="outline-primary" onClick={logout}>
               Log out
             </Button>
