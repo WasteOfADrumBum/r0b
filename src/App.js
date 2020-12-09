@@ -10,6 +10,7 @@ import CodeSnippets from "./Components/CodeSnippets/CodeSnippets.jsx";
 import CreatorProfile from "./Components/CreatorProfile/CreatorProfile.jsx";
 import License from "./Components/License/License.jsx";
 import NavBar from "./Components/NavBar/NavBar.jsx";
+import BrandName from "./Components/BrandName/BrandName.jsx";
 import "./assets/styles/App.css";
 
 // https://medium.com/@meakaakka/a-beginners-guide-to-writing-a-kickass-readme-7ac01da88ab3
@@ -40,7 +41,11 @@ function HomePage(props) {
             }}
             className="p-1 mb-3"
           />
-          <h1>Glad to see you back, {name}. </h1>
+          <h1>
+            {" "}
+            Welcome to <BrandName />
+          </h1>
+          <h2>Glad to see you back, {name}. </h2>
           <p>
             This is a simple application designed to create a template for
             testing.
@@ -137,8 +142,8 @@ function HomePage(props) {
               applications in a JSON format, making it not strange to any
               JavaScript developer. It supports arrays and nested objects values
               and allows for flexible and dynamic schemas. It is often used with
-              <b> Mongoose</b>, an Object Data Modeling (ODM) library, that helps
-              to manage relationships between data and provides schema
+              <b> Mongoose</b>, an Object Data Modeling (ODM) library, that
+              helps to manage relationships between data and provides schema
               validations.
             </Col>
           </Row>
