@@ -14,7 +14,7 @@ const CardDeckDep = () => {
   return (
     <>
       {/* Banner */}
-      <Row className="justify-content-md-center">
+      <Row className="justify-content-md-center section1">
         <Col className="m-auto pb-4" m="auto">
           <h2>This Applications Promenant Dependencies</h2>
         </Col>

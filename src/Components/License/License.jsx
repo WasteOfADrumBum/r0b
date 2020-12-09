@@ -10,7 +10,7 @@ import {
 const License = () => {
   return (
     <>
-      <h2 className="mb-5">Licensed To Code</h2>
+      <h2 className="mb-5 section4">Licensed To Code</h2>
       <Row className="text-left mb-5">
         <Col md={6}>
           <Row>

@@ -11,6 +11,7 @@ import CreatorProfile from "./Components/CreatorProfile/CreatorProfile.jsx";
 import License from "./Components/License/License.jsx";
 import NavBar from "./Components/NavBar/NavBar.jsx";
 import BrandName from "./Components/BrandName/BrandName.jsx";
+import Footer from "./Components/Footer/Footer.jsx";
 import "./assets/styles/App.css";
 
 // https://medium.com/@meakaakka/a-beginners-guide-to-writing-a-kickass-readme-7ac01da88ab3
@@ -47,7 +48,7 @@ function HomePage(props) {
           <h2>Glad to see you back, {name}. </h2>
           <p>
             This is a simple application designed to create a template for
-            testing.
+            testing various languages compatibilities.
           </p>
           <NavBar />
           <p className="mt-3">
@@ -119,7 +120,7 @@ function HomePage(props) {
           JavaScript Standard Style
         </Button>
         <hr />
-        <h2 className="mb-4">Check Out These Features</h2>
+        <h2 className="mb-4 section2">Check Out These Features</h2>
         <div className="p-3 text-left">
           <Row className="pb-3">
             <Col md={12}>
@@ -162,10 +163,11 @@ function HomePage(props) {
         </div>
         <CodeSnippets />
         <hr />
-        <h2 className="mb-4">Who Made This Awesome Application?</h2>
+        <h2 className="mb-4 section3">Who Made This Awesome Application?</h2>
         <CreatorProfile />
         <hr />
         <License />
+        <Footer />
       </Container>
     );
   }
