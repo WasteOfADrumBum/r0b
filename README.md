@@ -10,8 +10,8 @@ This project exisits to show my passion for coding. It has been built with all m
 
 # Technologies Used
 
-![GitHub top language](https://img.shields.io/github/languages/top/WasteOfADrumBumr0b?color=green&logo=github&logoColor=green)
-![GitHub language count](https://img.shields.io/github/languages/count/WasteOfADrumBumr0b?color=green&logo=github&logoColor=green)
+![GitHub top language](https://img.shields.io/github/languages/top/WasteOfADrumBum/r0b?color=green&logo=github&logoColor=green)
+![GitHub language count](https://img.shields.io/github/languages/count/WasteOfADrumBum/r0b?color=green&logo=github&logoColor=green)
 
 Languages: I chose to use React.js as the foundation of the user interface, Auth0 for the Authentication and authorization platform as well as Bootstrap's CSS Framework for developing a responsive and mobile-first website.
 
@@ -44,34 +44,34 @@ TypeScript, as described on its official website, is a superset of JavaScript th
 
 ## Example Gif
 
-<img src="public/assets/imagesr0b-demo.png" width="500" />
+<img src="public/assets/images/r0b-demo.png" width="500" />
 
 ## Repository
 
-![GitHub repo size](https://img.shields.io/github/repo-size/WasteOfADrumBumr0b?logo=github)
+![GitHub repo size](https://img.shields.io/github/repo-size/WasteOfADrumBum/r0b?logo=github)
 
-![GitHub Commit Activity](https://img.shields.io/github/commit-activity/m/WasteOfADrumBumr0b)
-![GitHub Last Commit](https://img.shields.io/github/last-commit/WasteOfADrumBumr0b)
+![GitHub Commit Activity](https://img.shields.io/github/commit-activity/m/WasteOfADrumBum/r0b)
+![GitHub Last Commit](https://img.shields.io/github/last-commit/WasteOfADrumBum/r0b)
 
-![GitHubopen pull request](https://img.shields.io/github/issues-pr/WasteOfADrumBumr0b)
-![GitHub closed pull request](https://img.shields.io/github/issues-pr-closed/WasteOfADrumBumr0b)
+![GitHubopen pull request](https://img.shields.io/github/issues-pr/WasteOfADrumBum/r0b)
+![GitHub closed pull request](https://img.shields.io/github/issues-pr-closed/WasteOfADrumBum/r0b)
 
-![GitHub Stars](https://img.shields.io/github/stars/WasteOfADrumBumr0b?style=social)
+![GitHub Stars](https://img.shields.io/github/stars/WasteOfADrumBum/r0b?style=social)
 
-- [Project Repo](https://github.com/WasteOfADrumBumr0b)
+- [Project Repo](https://github.com/WasteOfADrumBum/r0b)
 
 ## Contributors
 
-![GitHub contributors](https://img.shields.io/github/contributors/WasteOfADrumBumr0b)
-![GitHub Forks](https://img.shields.io/github/forks/WasteOfADrumBumr0b?label=Fork)
-![GitHub Watchers](https://img.shields.io/github/watchers/WasteOfADrumBumr0b?label=Watch)
+![GitHub contributors](https://img.shields.io/github/contributors/WasteOfADrumBum/r0b)
+![GitHub Forks](https://img.shields.io/github/forks/WasteOfADrumBum/r0b?label=Fork)
+![GitHub Watchers](https://img.shields.io/github/watchers/WasteOfADrumBum/r0b?label=Watch)
 
 ## Test
 
 ![GitHub test](https://img.shields.io/badge/test-100%25-success)
 
-![GitHub open issues](https://img.shields.io/github/issues/WasteOfADrumBumr0b)
-![GitHub closed issues](https://img.shields.io/github/issues-closed/WasteOfADrumBumr0b)
+![GitHub open issues](https://img.shields.io/github/issues/WasteOfADrumBum/r0b)
+![GitHub closed issues](https://img.shields.io/github/issues-closed/WasteOfADrumBum/r0b)
 
 ## Licence
 
