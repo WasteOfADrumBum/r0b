@@ -42,7 +42,6 @@ function HomePage(props) {
             className="p-1 mb-3"
           />
           <h1>
-            {" "}
             Welcome to <BrandName />
           </h1>
           <h2>Glad to see you back, {name}. </h2>
