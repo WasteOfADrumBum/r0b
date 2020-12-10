@@ -12,6 +12,7 @@ import License from "./Components/License/License.jsx";
 import NavBar from "./Components/NavBar/NavBar.jsx";
 import BrandName from "./Components/BrandName/BrandName.jsx";
 import Footer from "./Components/Footer/Footer.jsx";
+import { BiLogOut } from "react-icons/bi";
 import "./assets/styles/App.css";
 
 // https://medium.com/@meakaakka/a-beginners-guide-to-writing-a-kickass-readme-7ac01da88ab3
@@ -52,8 +53,12 @@ function HomePage(props) {
           </p>
           <NavBar />
           <p className="mt-3">
-            <Button variant="outline-primary" onClick={logout}>
-              Log out
+            <Button
+              variant="outline-danger"
+              onClick={logout}
+              style={{ position: "fixed", bottom: "-4px", right: "55px" }}
+            >
+              <BiLogOut />
             </Button>
           </p>
         </Jumbotron>
@@ -179,6 +184,7 @@ function HomePage(props) {
           border: "solid #888888 .1rem",
         }}
       >
+        <BrandName />
         <h1 className="mb-3">Do I know you?</h1>
         <h2 style={{ fontFamily: "Lucida Handwriting, cursive" }}>
           Please, log in.
