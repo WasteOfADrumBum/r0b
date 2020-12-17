@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/WasteOfADrumBum/r0b/static/css/main.d5eb5d7f.chunk.css",
+    "main.js": "/WasteOfADrumBum/r0b/static/js/main.e4395b85.chunk.js",
+    "main.js.map": "/WasteOfADrumBum/r0b/static/js/main.e4395b85.chunk.js.map",
+    "runtime-main.js": "/WasteOfADrumBum/r0b/static/js/runtime-main.b76eaf36.js",
+    "runtime-main.js.map": "/WasteOfADrumBum/r0b/static/js/runtime-main.b76eaf36.js.map",
+    "static/css/2.20aa2d7b.chunk.css": "/WasteOfADrumBum/r0b/static/css/2.20aa2d7b.chunk.css",
+    "static/js/2.4adf8043.chunk.js": "/WasteOfADrumBum/r0b/static/js/2.4adf8043.chunk.js",
+    "static/js/2.4adf8043.chunk.js.map": "/WasteOfADrumBum/r0b/static/js/2.4adf8043.chunk.js.map",
+    "static/js/3.6d380e3b.chunk.js": "/WasteOfADrumBum/r0b/static/js/3.6d380e3b.chunk.js",
+    "static/js/3.6d380e3b.chunk.js.map": "/WasteOfADrumBum/r0b/static/js/3.6d380e3b.chunk.js.map",
+    "index.html": "/WasteOfADrumBum/r0b/index.html",
+    "service-worker.js": "/WasteOfADrumBum/r0b/service-worker.js",
+    "service-worker.js.map": "/WasteOfADrumBum/r0b/service-worker.js.map",
+    "static/css/2.20aa2d7b.chunk.css.map": "/WasteOfADrumBum/r0b/static/css/2.20aa2d7b.chunk.css.map",
+    "static/css/main.d5eb5d7f.chunk.css.map": "/WasteOfADrumBum/r0b/static/css/main.d5eb5d7f.chunk.css.map",
+    "static/js/2.4adf8043.chunk.js.LICENSE.txt": "/WasteOfADrumBum/r0b/static/js/2.4adf8043.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b76eaf36.js",
+    "static/css/2.20aa2d7b.chunk.css",
+    "static/js/2.4adf8043.chunk.js",
+    "static/css/main.d5eb5d7f.chunk.css",
+    "static/js/main.e4395b85.chunk.js"
+  ]
+}

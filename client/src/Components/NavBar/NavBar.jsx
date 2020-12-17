@@ -14,7 +14,7 @@ const NavBar = () => {
         expand="lg"
         style={{
           margin: "auto",
-          width: "50%",
+          width: "56%",
           borderTop: ".1rem solid black",
           borderRadius: "5rem",
         }}
@@ -22,7 +22,7 @@ const NavBar = () => {
       >
         <Navbar.Toggle
           aria-controls="basic-navbar-nav"
-          style={{ margin: "auto", width: "50%" }}
+          style={{ margin: "auto", width: "56%" }}
         >
           <BiMenu />
         </Navbar.Toggle>
@@ -78,7 +78,7 @@ const NavBar = () => {
                   className="text-capitalize "
                   style={{ border: "none" }}
                 >
-                  Creator
+                  CRUD
                 </Button>
               </Link>
             </Nav.Item>
@@ -86,6 +86,24 @@ const NavBar = () => {
               <Link
                 activeClass="active"
                 to="section4"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+              >
+                <Button
+                  variant="outline-secondary"
+                  className="text-capitalize "
+                  style={{ border: "none" }}
+                >
+                  Creator
+                </Button>
+              </Link>
+            </Nav.Item>
+            <Nav.Item className="m-2">
+              <Link
+                activeClass="active"
+                to="section5"
                 spy={true}
                 smooth={true}
                 offset={-70}
