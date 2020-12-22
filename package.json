@@ -8,7 +8,7 @@
     "client": "cd client && npm run start",
     "start": "concurrently \"node server/server.js\" \"npm run client\"",
     "dev": "concurrently \"nodemon server/server.js\" \"npm run client\"",
-    "seed": "nodemon server/seeds/seedDB.js",
+    "seed": "nodemon server/seeds/seedDB.js"
   },
   "repository": {
     "type": "git",
