@@ -9,11 +9,6 @@
     "start": "concurrently \"node server/server.js\" \"npm run client\"",
     "dev": "concurrently \"nodemon server/server.js\" \"npm run client\"",
     "seed": "nodemon server/seeds/seedDB.js",
-    "predeploy": "cd client && npm run build",
-    "deploy": "cd client && gh-pages -d build",
-    "build": "cd client && npm run-script build",
-    "test": "cd client && npm react-scripts test",
-    "eject": "cd client && npm react-scripts eject"
   },
   "repository": {
     "type": "git",
