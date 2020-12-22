@@ -1,21 +1,33 @@
+// Express Setup
 const express = require("express");
-const app = express();
 const bodyParser = require("body-parser");
-const cors = require("cors");
-const mongoose = require("mongoose");
-const todoRoutes = express.Router();
+const dotenv = require("dotenv");
+const app = express();
 const PORT = process.env.PORT || 4000;
+const cors = require("cors");
+// MongoDB → Mongoose
+const mongoose = require("mongoose");
+const logger = require("morgan");
+// Route Setup
+const todoRoutes = express.Router();
+const Todo = require("./models/todo.model");
 
-let Todo = require("./models/todo.model");
-
-app.use(cors());
-app.use(bodyParser.json());
+// Morgan Logger
+app.use(logger("dev"));
 
 // Express data parsing
+dotenv.config();
+app.use(cors());
+app.use(bodyParser.json());
 app.use(express.urlencoded({ extended: true }));
-app.use(express.json());
+// app.use(express.json());
 app.use(express.static("public"));
+// Production vs development build
+if (process.env.NODE_ENV === "production") {
+  app.use(express.static("client/build"));
+}
 
+// Database Connection
 const URI = process.env.MONGODB_URI || "mongodb://localhost/todos";
 mongoose.connect(
   URI,
@@ -27,12 +39,13 @@ mongoose.connect(
   },
   (err) => console.log(err)
 );
+// Confirm Connection Success
 const connection = mongoose.connection;
-
 connection.once("open", () => {
   console.log("MongoDB database connection established successfully");
 });
 
+// Routes
 todoRoutes.route("/").get((req, res) => {
   Todo.find((err, todos) => {
     if (err) {
@@ -98,6 +111,7 @@ todoRoutes.route("/delete/:id").delete((req, res) => {
 
 app.use("/todos", todoRoutes);
 
+// Server Port
 app.listen(PORT, () => {
   console.log("http://localhost:" + PORT);
   console.log(".env.PORT:" + process.env.PORT);

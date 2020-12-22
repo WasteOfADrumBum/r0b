@@ -20,6 +20,8 @@ import "./assets/styles/App.css";
 // https://medium.com/@meakaakka/a-beginners-guide-to-writing-a-kickass-readme-7ac01da88ab3
 // TODO: Code style (https://github.com/standard/standard)
 
+console.log(Router);
+
 // Landing Page (HomePage)
 function HomePage(props) {
   const { authenticated } = props;

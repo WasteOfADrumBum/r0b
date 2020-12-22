@@ -34,7 +34,7 @@ const CodeSnippets = () => {
           few snippets of code showing the work behind the curtain.
         </Col>
       </Row>
-      <Accordion defaultActiveKey="0">
+      <Accordion>
         <Card>
           <Accordion.Toggle as={Card.Header} eventKey="0">
             <h4>

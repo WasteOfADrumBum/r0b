@@ -33,7 +33,7 @@ const CodeSnippets = () => {
           snippets.
         </Col>
       </Row>
-      <Accordion defaultActiveKey="0">
+      <Accordion>
         <Card>
           <Accordion.Toggle as={Card.Header} eventKey="0">
             <h4>Create</h4>

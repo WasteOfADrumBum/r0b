@@ -62,6 +62,7 @@ export default class CreateTodo extends Component {
       todo_completed: false,
     });
 
+    this.props.history.push("/");
   }
 
   render() {

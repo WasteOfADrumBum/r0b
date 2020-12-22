@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
 import { Button } from "react-bootstrap";
-import { FiRefreshCw } from "react-icons/fi";
 
 const Todo = (props) => (
   <tr>
@@ -26,11 +25,6 @@ const Todo = (props) => (
 );
 
 export default class TodosList extends Component {
-  refresh = () => {
-    // re-renders the component
-    this.setState({});
-  };
-
   constructor(props) {
     super(props);
     this.state = { todos: [] };
@@ -47,6 +41,16 @@ export default class TodosList extends Component {
       });
   }
 
+  componentDidUpdate(prevProps, prevState) {
+    if (prevState.todo_description !== this.state.todo_description) {
+      this.handleUpdateInfo();
+    }
+  }
+
+  handleUpdateInfo = () => {
+    this.setState({ name: this.props.todo_description });
+  };
+
   todoList() {
     return this.state.todos.map(function (currentTodo, i) {
       return <Todo todo={currentTodo} key={i} />;
@@ -55,29 +59,21 @@ export default class TodosList extends Component {
 
   render() {
     return (
-      <div>
-        <h3>
-          ToDo List{" "}
-          <Button
-            onClick={this.refresh}
-            style={{ color: "#70b5de" }}
-            variant="light"
-            size="sm"
-          >
-            <FiRefreshCw />
-          </Button>
-        </h3>
-        <table className="table table-striped" style={{ marginTop: 20 }}>
-          <thead>
-            <tr>
-              <th>Description</th>
-              <th>Responsible</th>
-              <th>Priority</th>
-              <th>Action</th>
-            </tr>
-          </thead>
-          <tbody>{this.todoList()}</tbody>
-        </table>
+      <div className="todo-list">
+        <h3>To Do List</h3>
+        <div className="table-responsive">
+          <table className="table table-striped" style={{ marginTop: 20 }}>
+            <thead>
+              <tr>
+                <th>Description</th>
+                <th>Responsible</th>
+                <th>Priority</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>{this.todoList()}</tbody>
+          </table>
+        </div>
       </div>
     );
   }

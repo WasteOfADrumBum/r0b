@@ -5,8 +5,7 @@ import EditTodo from "./Update/edit-todo.component";
 import TodosList from "./Read/todos-list.component";
 import DeleteTodo from "./Delete/delete-todo.component.js";
 import CodeSnippets from "./CodeSnippets/CodeSnippets.jsx";
-import { Row, Col, Image, Button } from "react-bootstrap";
-import { FiRefreshCw } from "react-icons/fi";
+import { Row, Col, Image } from "react-bootstrap";
 
 class Crud extends Component {
   render() {
@@ -25,7 +24,7 @@ class Crud extends Component {
           caching are two examples of volatile memory - they contain data that
           will be erased when they lose power.
         </p>
-        <i >© Sumo Logic</i>
+        <i>© Sumo Logic</i>
         <Row className="mt-5">
           <Col md={6} className="m-auto">
             <Image src="/assets/images/crud.png" fluid />
@@ -38,14 +37,17 @@ class Crud extends Component {
               <i>delete</i> tasks.
             </p>
             <p>
-              If the list is slow to update you can always click the
-              <Button disabled style={{ color: "#70b5de" }} variant="light" size="sm">
-                <FiRefreshCw />
-              </Button>
-              button to refresh the component. React is a single page web application
-              so we always avoid refreshing the entire page. However, using
+              React is a single page web application so we always avoid
+              refreshing the entire page. However, using
               <code style={{ color: "#70b5de" }}> this.setState() </code>
-              method, we’re able to refresh a component only.
+              method, we’re able to refresh a component only by mounting the
+              component. We first make sure that the{" "}
+              <code style={{ color: "#70b5de" }}>componentDidMount()</code>. Next
+              we check that the{" "}
+              <code style={{ color: "#70b5de" }}>componentDidUpdate()</code> by
+              comparing the current props and state to the previous props and
+              state. Finally, if the new infomation doesn't match the old
+              information then we handle the update by remounting the component.
             </p>
           </Col>
         </Row>
