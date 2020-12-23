@@ -2,11 +2,6 @@ import React, { Component } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
 import { Button } from "react-bootstrap";
-
-const URL =
-  process.env.ATLAS_URL ||
-  "https://jms-r0b.herokuapp.com/" ||
-  "http://localhost:4000/";
 export default class DeleteTodo extends Component {
   constructor(props) {
     super(props);
@@ -27,7 +22,7 @@ export default class DeleteTodo extends Component {
   // Mount the components need to render values of this.state
   componentDidMount() {
     axios
-      .get(URL + "todos/" + this.props.match.params.id)
+      .get("/todos/" + this.props.match.params.id)
       .then((response) => {
         this.setState({
           todo_description: response.data.todo_description,
@@ -43,7 +38,7 @@ export default class DeleteTodo extends Component {
   onSubmit(e) {
     e.preventDefault();
     axios
-      .delete(URL + "todos/delete/" + this.props.match.params.id)
+      .delete("/todos/delete/" + this.props.match.params.id)
       .then((res) => console.log("Removed:", res.data.msg.todo_description));
 
     this.props.history.push("/");

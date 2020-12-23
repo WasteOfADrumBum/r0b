@@ -3,11 +3,6 @@ import { Link } from "react-router-dom";
 import axios from "axios";
 import { Button } from "react-bootstrap";
 
-const URL =
-  process.env.ATLAS_URL ||
-  "https://jms-r0b.herokuapp.com/" ||
-  "http://localhost:4000/";
-
 const Todo = (props) => (
   <tr>
     <td>{props.todo.todo_description}</td>
@@ -38,7 +33,7 @@ export default class TodosList extends Component {
 
   componentDidMount() {
     axios
-      .get(URL + "todos/")
+      .get("/todos/")
       .then((response) => {
         this.setState({ todos: response.data });
       })

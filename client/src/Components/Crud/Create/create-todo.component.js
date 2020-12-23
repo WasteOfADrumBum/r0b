@@ -1,10 +1,5 @@
 import React, { Component } from "react";
 import axios from "axios";
-
-const URL =
-  process.env.ATLAS_URL ||
-  "https://jms-r0b.herokuapp.com/" ||
-  "http://localhost:4000/";
 export default class CreateTodo extends Component {
   constructor(props) {
     super(props);
@@ -55,7 +50,7 @@ export default class CreateTodo extends Component {
       todo_completed: this.state.todo_completed,
     };
 
-    axios.post(URL + "todos/add", newTodo).then((res) => console.log(res.data));
+    axios.post("/todos/add", newTodo).then((res) => console.log(res.data));
 
     this.setState({
       todo_description: "",
