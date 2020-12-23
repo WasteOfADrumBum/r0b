@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import axios from "axios";
 import { Button } from "react-bootstrap";
 
-const URL = "https://jms-r0b.herokuapp.com/" || "http://localhost:4000/";
+const URL = process.env.ATLAS_URL || "http://localhost:4000/";
 
 const Todo = (props) => (
   <tr>
@@ -26,11 +26,14 @@ const Todo = (props) => (
   </tr>
 );
 
+console.log(".env ATLAS_URL Path", process.env.ATLAS_URL);
+console.log("ATLAS_URL Path", URL);
 export default class TodosList extends Component {
   constructor(props) {
     super(props);
     this.state = { todos: [] };
   }
+
 
   componentDidMount() {
     axios
