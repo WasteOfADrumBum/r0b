@@ -7,11 +7,14 @@ export default class Auth {
   constructor() {
     this.auth0 = new auth0.WebAuth({
       // the following three lines MUST be updated with auth0's credentials
-      domain: "joshua-m-small.us.auth0.com",
-      audience: "https://joshua-m-small.us.auth0.com/userinfo",
-      clientID: "S5p7O86jBMB9rDbXGyh1CR2GsegY3Zen",
-      redirectUri: "https://localhost:3000/callback", 
-      // redirectUri: "https://jms-r0b.herokuapp.com/callback", 
+      // domain: "joshua-m-small.us.auth0.com",
+      // audience: "https://joshua-m-small.us.auth0.com/userinfo",
+      // clientID: "S5p7O86jBMB9rDbXGyh1CR2GsegY3Zen",
+      // redirectUri: "https://localhost:3000/callback", 
+      domain: "lively-sea-4801.us.auth0.com", // heroku auth0 domain
+      audience: "lively-sea-4801.us.auth0.com/userinfo", //heroku autho0
+      clientID: "SIoLckvTfswa2c1he0cCpU1I0Hhf8I0t", // heroku auth0
+      redirectUri: "https://jms-r0b.herokuapp.com/callback", // heroku callback 
       responseType: "token id_token",
       scope: "openid profile",
     });
