@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import axios from "axios";
 
+const URL = "https://jms-r0b.herokuapp.com/" || "http://localhost:4000/";
+
 export default class CreateTodo extends Component {
   constructor(props) {
     super(props);
@@ -51,9 +53,7 @@ export default class CreateTodo extends Component {
       todo_completed: this.state.todo_completed,
     };
 
-    axios
-      .post("http://localhost:4000/todos/add", newTodo)
-      .then((res) => console.log(res.data));
+    axios.post(URL + "todos/add", newTodo).then((res) => console.log(res.data));
 
     this.setState({
       todo_description: "",

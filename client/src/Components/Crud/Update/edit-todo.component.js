@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import axios from "axios";
 
+const URL = "https://jms-r0b.herokuapp.com/" || "http://localhost:4000/";
+
 export default class EditTodo extends Component {
   constructor(props) {
     super(props);
@@ -21,7 +23,7 @@ export default class EditTodo extends Component {
 
   componentDidMount() {
     axios
-      .get("http://localhost:4000/todos/" + this.props.match.params.id)
+      .get(URL + "todos/" + this.props.match.params.id)
       .then((response) => {
         this.setState({
           todo_description: response.data.todo_description,
@@ -69,10 +71,7 @@ export default class EditTodo extends Component {
     };
     console.log(obj);
     axios
-      .post(
-        "http://localhost:4000/todos/update/" + this.props.match.params.id,
-        obj
-      )
+      .post(URL + "todos/update/" + this.props.match.params.id, obj)
       .then((res) => console.log(res.data));
 
     this.props.history.push("/");
