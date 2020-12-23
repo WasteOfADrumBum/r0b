@@ -1,7 +1,10 @@
 import React, { Component } from "react";
 import axios from "axios";
 
-const URL = process.env.ATLAS_URL || "http://localhost:4000/";
+const URL =
+  process.env.ATLAS_URL ||
+  "https://jms-r0b.herokuapp.com/" ||
+  "http://localhost:4000/";
 export default class CreateTodo extends Component {
   constructor(props) {
     super(props);
