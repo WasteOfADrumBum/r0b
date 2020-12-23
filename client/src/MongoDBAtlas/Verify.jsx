@@ -83,7 +83,7 @@ function login(email, password, callback) {
     });
   }
 
-  unction verify(email, callback) {
+ function verify (email, callback) {
     const { MongoClient } = require("mongodb@4.4.1");
     const dbUser = "jmsmall89";
     const dbPwd = "Michael16091!";
@@ -107,7 +107,7 @@ function login(email, password, callback) {
     });
   }
 
-  function changePassword(email, newPassword, callback) {
+  function changePassword (email, newPassword, callback) {
     const { MongoClient } = require("mongodb@4.4.1");
     const dbUser = "jmsmall89";
     const dbPwd = "Michael16091!";
@@ -134,7 +134,7 @@ function login(email, password, callback) {
     });
   }
 
-  function remove(id, callback) {
+  function remove (id, callback) {
     const { MongoClient } = require("mongodb@4.4.1");
     const dbUser = "jmsmall89";
     const dbPwd = "Michael16091!";
