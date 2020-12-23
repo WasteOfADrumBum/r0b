@@ -10,7 +10,8 @@ export default class Auth {
       domain: "joshua-m-small.us.auth0.com",
       audience: "https://joshua-m-small.us.auth0.com/userinfo",
       clientID: "S5p7O86jBMB9rDbXGyh1CR2GsegY3Zen",
-      redirectUri: "http://localhost:3000/callback",
+      // redirectUri: "https://localhost:3000/callback", 
+      redirectUri: "https://jms-r0b.herokuapp.com/callback", 
       responseType: "token id_token",
       scope: "openid profile",
     });
