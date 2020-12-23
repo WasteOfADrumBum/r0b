@@ -12,10 +12,10 @@ export default class Auth {
       // clientID: "S5p7O86jBMB9rDbXGyh1CR2GsegY3Zen",
       // redirectUri: "https://localhost:3000/callback",
       domain: "lively-sea-4801.us.auth0.com", // heroku auth0 domain
-      // audience: "lively-sea-4801.us.auth0.com/userinfo", //heroku autho0
+      audience: "https://lively-sea-4801.us.auth0.com/api/v2/", //heroku autho0
       clientID: "SIoLckvTfswa2c1he0cCpU1I0Hhf8I0t", // heroku auth0
-      // redirectUri: "https://jms-r0b.herokuapp.com/callback", // heroku callback
-      redirectUri: window.location.href,
+      redirectUri: "https://jms-r0b.herokuapp.com/callback", // heroku callback
+      // redirectUri: window.location.href,
       responseType: "token id_token",
       scope: "openid profile",
 
