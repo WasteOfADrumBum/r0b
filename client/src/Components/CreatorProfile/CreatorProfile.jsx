@@ -8,7 +8,7 @@ const CreatorProfile = () => {
   return (
     <>
       <h2 className="mb-4 section4">Who Made This Awesome Application?</h2>
-      <div className="mt-4">
+      <div className="mt-4 creator-profile">
         <Row>
           <Col md={4} className="m-auto">
             <Image

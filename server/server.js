@@ -8,6 +8,7 @@ const cors = require("cors");
 // MongoDB → Mongoose
 const mongoose = require("mongoose");
 const logger = require("morgan");
+const db = config.get("MONGODB_URI");
 // Route Setup
 const todoRoutes = express.Router();
 const Todo = require("./models/todo.model");
@@ -28,7 +29,7 @@ if (process.env.NODE_ENV === "production") {
 }
 
 // Database Connection
-const URI = process.env.MONGODB_URI || "mongodb://localhost/todos";
+const URI = db || process.env.MONGODB_URI || "mongodb://localhost/todos";
 mongoose.connect(
   URI,
   {
@@ -37,7 +38,11 @@ mongoose.connect(
     useCreateIndex: true,
     useFindAndModify: false,
   },
-  (err) => console.log(err)
+  (err) => {
+    console.log(err);
+    console.error(err.message);
+    process.exit(1);
+  }
 );
 // Confirm Connection Success
 const connection = mongoose.connection;

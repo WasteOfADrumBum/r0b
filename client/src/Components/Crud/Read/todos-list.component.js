@@ -23,14 +23,13 @@ const Todo = (props) => (
     </td>
   </tr>
 );
-
-console.log("ATLAS_URL Path", URL);
 export default class TodosList extends Component {
   constructor(props) {
     super(props);
     this.state = { todos: [] };
   }
 
+  //  SERVER.JS → todoRoutes.route("/").get →
   componentDidMount() {
     axios
       .get("/todos/")
